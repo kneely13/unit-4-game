@@ -1,6 +1,7 @@
 var random_number;
 var lost =0;
 var win = 0;
+var total = 0;
 
 var startGame = function () {
 
@@ -30,17 +31,18 @@ startGame();
 $(".crystal").on('click', function () {
 
     var crystalNumber = parseInt($(this).attr('data-random'));
-var total
     total += crystalNumber;
 
-    console.log(numAdd);
+    console.log(total);
 
     if(total > random_number){
         lost++;
 
     }
     else if(total === random_number ){
-        console.log('Winner!!')
+        win ++;
+        $('.scoreContainer').html('<h2>Winner!</h2>');
+        $('#winCounter').text(win);
     }
 });
 
@@ -52,18 +54,9 @@ $(document).ready(function() {
 
 
     $('.totalContainer').append("Your total score is: ");
-    
-    $('.scoreContainer').html('');
-        var win = $("<div>");
-            win.attr({
-                'class': 'winScore',
-            });
-        var lost = $("<div>");
-            lost.attr({
-                'class': 'winScore',
-            });
 
-        $(".scoreContainer").append(win, lost);
+
+$(".scoreContainer").append(win, lost);
 
 
 }); //end of method
