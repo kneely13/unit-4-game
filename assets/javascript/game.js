@@ -41,7 +41,7 @@ $(".crystal").on('click', function () {
     }
     else if(total === random_number ){
         win ++;
-        $('.scoreContainer').html('<h2>Winner!</h2>');
+        $('.scoreContainer').html();
         $('#winCounter').text(win);
     }
 });
@@ -56,7 +56,7 @@ $(document).ready(function() {
     $('.totalContainer').append("Your total score is: ");
 
 
-$(".scoreContainer").append(win, lost);
+$(".scoreContainer").append();
 
 
 }); //end of method
