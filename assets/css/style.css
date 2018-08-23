@@ -1,0 +1,11 @@
+.crystalsContainer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.crystal{
+    border:1px solid orange;
+    height:200px;
+    width:200px;
+}
