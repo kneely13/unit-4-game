@@ -1,7 +1,48 @@
+html {
+    background-image: url(../images/purple-background.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size:cover;
+}
+
+.titleContainer {
+    border: 10px solid green;
+    width:150px;
+}
+
+#directionsContainer{
+    border: 10px solid pink;
+    width:500px;
+    color:pink;
+}
+
+
+.randomNumberContainer{
+    border: 10px solid blue;
+    width:500px;
+    color:red;
+}
+.totalContainer{
+    border: 10px solid blue;
+    width:500px;
+    color:red;
+}
+.scoreCounter{
+    border: 10px solid blue;
+    width:500px;
+    color:red;
+}
+.winsLossesContainer{
+    border: 10px solid blue;
+    width:500px;
+    color:red;
+}
+
+
 .crystalsContainer{
 display: flex;
 justify-content: space-around;
 align-items: center;
+
 }
 
 .crystal{
@@ -9,3 +50,6 @@ align-items: center;
     height:200px;
     width:200px;
 }
+
+
+

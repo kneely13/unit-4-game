@@ -7,7 +7,7 @@ var startGame = function () {
 
     random_number = Math.floor(Math.random() * 99) +19;
 
-    $('#randomNumberContainer').html('' + random_number);
+    $('.randomNumberContainer').html('' + random_number);
 
     for(var i=0; i<4; i++){
 
@@ -32,17 +32,16 @@ $(".crystal").on('click', function () {
 
     var crystalNumber = parseInt($(this).attr('data-random'));
     total += crystalNumber;
-
+    $(".scoreCounter").text(total);
     console.log(total);
 
     if(total > random_number){
         lost++;
-
+        $('#lossCounter').text('');
     }
     else if(total === random_number ){
         win ++;
-        $('.scoreContainer').html();
-        $('#winCounter').text(win);
+        $('#winCounter').text();
     }
 });
 
@@ -55,8 +54,6 @@ $(document).ready(function() {
 
     $('.totalContainer').append("Your total score is: ");
 
-
-$(".scoreContainer").append();
-
-
+    $(".bg").css("background-image", "url('/css/images/css.jpg')");
+   
 }); //end of method
