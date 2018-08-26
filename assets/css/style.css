@@ -20,6 +20,7 @@ html {
     border: 10px solid blue;
     width:500px;
     color:red;
+    display:inline-block;
 }
 .totalContainer{
     border: 10px solid blue;
@@ -35,6 +36,7 @@ html {
     border: 10px solid blue;
     width:500px;
     color:red;
+    display:inline-block;
 }
 
 
