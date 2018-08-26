@@ -54,6 +54,7 @@ $(document).on('click', ".crystal",function () {
     if(total > random_number){
         lost++;
         $('#lost').html('<h3>Losses: </h3>' + lost);
+        alert ("You Lost!!! Boohoo");
         total=0;
         resetAndStartGame();
 
@@ -61,6 +62,7 @@ $(document).on('click', ".crystal",function () {
     else if(total === random_number ){
         win ++;
         $('#win').html('<h3>Wins: </h3>' + win);
+        alert("Winner!!!!!");
         total=0;
         resetAndStartGame();
     }
