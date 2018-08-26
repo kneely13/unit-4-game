@@ -5,38 +5,67 @@ html {
 }
 
 .titleContainer {
-    border: 10px solid green;
+    border: 10px solid hotpink;
     width:150px;
+    color:White;
+    background-color: hotpink;
+    padding: 2em;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #directionsContainer{
-    border: 10px solid pink;
-    width:500px;
-    color:pink;
+    
+        border: 10px solid pink;
+        width: 500px;
+        color: pink;
+        padding: 0em;
+        background-color: purple;
 }
 
 
 .randomNumberContainer{
-    border: 10px solid blue;
-    width:500px;
-    color:red;
-    display:inline-block;
+    
+    border: 10px solid purple;
+    width: 500px;
+    height: 122px;
+    padding-top: 4em;
+    background-color: orchid;
+    display: inline-block;
+    font-size:50px;
+    color: purple;
+    
+    
 }
 .totalContainer{
-    border: 10px solid blue;
+    border: 5px solid blue;
     width:500px;
-    color:red;
+    color:white;
+    background-color: deepskyblue;
+    padding: 1em;
+    font-size: 24px;
+    margin-right: 40px;
+    padding-right: 0px;
 }
 .scoreCounter{
-    border: 10px solid blue;
-    width:500px;
-    color:red;
+    border: 5px solid blue;
+    width: 500px;
+    background-color: orchid;
+    color: purple;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    font-size:50px;
 }
 .winsLossesContainer{
-    border: 10px solid blue;
-    width:500px;
-    color:red;
-    display:inline-block;
+    border: 5px solid blue;
+    
+    color: purple;
+    margin-top: 197px;
+    display: inline-block;
+    height: 1289px;
+    font-size: 23px;
 }
 
 
@@ -44,6 +73,7 @@ html {
 display: flex;
 justify-content: space-around;
 align-items: center;
+padding:2em;
 
 }
 
@@ -51,7 +81,29 @@ align-items: center;
     border:1px solid orange;
     height:200px;
     width:200px;
+
+
+}
+
+.randomNumberContainer{
+    border: 5px solid blue;
+    width: 500px;
+    height: 122px;
+    padding-top: 4em;
+    color: purple;
+    display: inline-block;
 }
 
 
+.winsLossesContainer{
+    border: 5px solid blue;
+    width: 145px;
+    color: white;
+    display: inline-block;
+    height: 185px;
+    background-color: deepskyblue;
+    padding-left: 1em
+    background-image = url(../images/crystal-one.jpg);
+}
 
+.score

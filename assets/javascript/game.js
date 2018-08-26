@@ -9,6 +9,8 @@ var resetAndStartGame = function () {
 
     $(".crystalsContainer").empty();
 
+    var images = ['/css/images/crystal-one.jpg','/css/images/crystal-two.jpg','/css/images/crystal-three.jpg','assets/crystal-four.jpg'];
+
     random_number = Math.floor(Math.random() * 99) +19;
 
     $('.randomNumberContainer').html('' + random_number);
@@ -23,6 +25,9 @@ var resetAndStartGame = function () {
             crystal.attr({
                 'class': 'crystal',
                 "data-random": random
+            });
+            crystal.css({
+                "background-image":"url('"+images[i]+"')","background-size":"cover"
             });
 
          
@@ -47,14 +52,14 @@ $(document).on('click', ".crystal",function () {
 
     if(total > random_number){
         lost++;
-        $('#lost').html('Losses: ' + lost);
+        $('#lost').html('<h3>Losses</h3>' + lost);
         total=0;
         resetAndStartGame();
 
     }
     else if(total === random_number ){
         win ++;
-        $('#win').html('Wins: ' + win);
+        $('#win').html('<h3>Wins</h3>' + win);
         total=0;
         resetAndStartGame();
     }
@@ -73,5 +78,6 @@ $(document).ready(function() {
     $('.totalContainer').append("Your total score is: ");
     
     $(".bg").css("background-image", "url('/css/images/css.jpg')");
+    
    
 }); //end of method
