@@ -53,18 +53,18 @@ $(document).on('click', ".crystal",function () {
 
     if(total > random_number){
         lost++;
-        $('#lost').html('<h3>Losses</h3>' + lost);
+        $('#lost').html('<h3>Losses: </h3>' + lost);
         total=0;
         resetAndStartGame();
 
     }
     else if(total === random_number ){
         win ++;
-        $('#win').html('<h3>Wins</h3>' + win);
+        $('#win').html('<h3>Wins: </h3>' + win);
         total=0;
         resetAndStartGame();
     }
-});// 
+});//
 
 
 
