@@ -9,7 +9,7 @@ var resetAndStartGame = function () {
 
     $(".crystalsContainer").empty();
 
-    var images = ['/css/images/crystal-one.jpg','/css/images/crystal-two.jpg','/css/images/crystal-three.jpg','assets/crystal-four.jpg'];
+    var images = ['assets/images/crystal-one.jpg','assets/images/crystal-two.jpg','assets/images/crystal-three.jpg','assets/images/crystal-four.jpg'];
 
     random_number = Math.floor(Math.random() * 99) +19;
 
@@ -27,7 +27,8 @@ var resetAndStartGame = function () {
                 "data-random": random
             });
             crystal.css({
-                "background-image":"url('"+images[i]+"')","background-size":"cover"
+                "background-image":"url('" + images[i] + "')",
+                "background-size":"cover"
             });
 
          
