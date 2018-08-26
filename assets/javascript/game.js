@@ -73,7 +73,7 @@ $(document).ready(function() {
     $('.titleContainer').append("Crystals Collector");
 
 
-    // $('#win').text("Wins: " + win);
+    // $('#win').text("<h3>Wins: </h3> + win);
     // $('#lost').text( "Losses: " + lost);
 
     $('.totalContainer').append("Your total score is: ");
